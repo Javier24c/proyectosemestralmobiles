@@ -4,17 +4,45 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
-      <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>BarberShop</ion-title>
+    <ion-title class="titulo">BARBERSHOP</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">BarberShop</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<div class="page-background"></div>
+
+<div class="overlay-text"></div>
+
+<div class="div-espacio">
+  
+
+</div>
+
+<ion-content>
+  <ion-card class="card-home">
+    <img src="../pages/img/agendarhora.jpg" alt="agendar hora">
+    <ion-card-header>
+      <ion-card-title>Agendar hora</ion-card-title>
+      <ion-button [routerLink]="'/agendar'">Agendar</ion-button>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="card-home">
+    <img alt="Silhouette of mountains" src="../pages/img/fotocorte.avif" />
+    <ion-card-header>
+      <ion-card-title>Tipos de cortes</ion-card-title>
+      <ion-button [routerLink]="'/cortes'">Ver</ion-button>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="card-home">
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <ion-card-header>
+      <ion-card-title>Personal</ion-card-title>
+      <ion-button [routerLink]="'/barberos'">Ver</ion-button>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>
 
 
